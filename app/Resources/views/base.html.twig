@@ -2,7 +2,13 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
+        <title>
+            {%- if block('title') -%}
+                {{ block('title') }} | Events
+            {%- else -%}
+                Nullapp for SymfonyCasts.net
+            {%-endif -%}
+        </title>
         {% block stylesheets %}{% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>

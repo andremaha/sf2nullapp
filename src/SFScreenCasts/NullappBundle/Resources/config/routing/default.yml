@@ -1,0 +1,3 @@
+null_homepage:
+    pattern:  /user-greetings/{userName}/{role}
+    defaults: { _controller: NullBundle:Default:index }

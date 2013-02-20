@@ -1,6 +1,15 @@
 null:
-    resource: "@NullBundle/Resources/config/routing.yml"
+    resource: "@NullBundle/Resources/config/routing/default.yml"
     prefix:   /
+
+NullBundle_event:
+    resource: "@NullBundle/Resources/config/routing/event.yml"
+    prefix:   /event
+
+NullBundle_event_annotation:
+    resource: "@NullBundle/Controller"
+    prefix:   /event
+    type:     annotation
 
 # Internal routing configuration to handle ESI
 # ****** WARNING ******

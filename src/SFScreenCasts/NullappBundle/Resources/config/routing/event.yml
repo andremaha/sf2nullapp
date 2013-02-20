@@ -1,0 +1,26 @@
+event_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "NullBundle:Event:show" }
+
+event_new:
+    pattern:  /new
+    defaults: { _controller: "NullBundle:Event:new" }
+
+event_create:
+    pattern:  /create
+    defaults: { _controller: "NullBundle:Event:create" }
+    requirements: { _method: post }
+
+event_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "NullBundle:Event:edit" }
+
+event_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "NullBundle:Event:update" }
+    requirements: { _method: post }
+
+event_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "NullBundle:Event:delete" }
+    requirements: { _method: post }
