@@ -1,0 +1,7 @@
+parameters:
+#    null.example.class: SFScreenCasts\NullappBundle\Example
+
+services:
+#    null.example:
+#        class: %null.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
