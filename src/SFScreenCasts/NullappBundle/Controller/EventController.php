@@ -10,6 +10,8 @@ use SFScreenCasts\NullappBundle\Form\EventType;
 
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Symfony\Component\HttpFoundation\File\Exception\AccessDeniedException;
+
 
 /**
  * Event controller.
@@ -20,7 +22,7 @@ class EventController extends Controller
     /**
      * Lists all Event entities.
      * @Template()
-     * @Route("/")
+     * @Route("/", name="event")
      */
     public function indexAction()
     {
@@ -35,7 +37,7 @@ class EventController extends Controller
 
     /**
      * Finds and displays a Event entity.
-     *
+     * @Route("/{id}/show", name="event_show")
      */
     public function showAction($id)
     {

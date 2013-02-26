@@ -9,7 +9,18 @@
                 Nullapp for SymfonyCasts.net
             {%-endif -%}
         </title>
-        {% block stylesheets %}{% endblock %}
+        {% block stylesheets %}
+
+            <link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css">
+
+            {% stylesheets
+            'bundles/null/css/*'
+            filter='cssrewrite'
+            %}
+            <link rel="stylesheet" href="{{ asset_url }}" />
+            {% endstylesheets %}
+
+        {% endblock stylesheets %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <body>

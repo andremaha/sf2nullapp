@@ -15,7 +15,7 @@ class LoadEvents implements FixtureInterface
     {
         $event1 = new Event();
         $event1->setName('Recording the First Episode');
-        $event1->setLocation('Home');
+        $event1->setLocation('Münster, Germany');
         $event1->setTime(new \DateTime('tomorrow noon'));
         $event1->setDetails('This will be awesome - I will record first episode for free and then will start selling them');
         $manager->persist($event1);
@@ -23,7 +23,7 @@ class LoadEvents implements FixtureInterface
 
         $event2 = new Event();
         $event2->setName('Recording the Second Episode');
-        $event2->setLocation('Home');
+        $event2->setLocation('Münster, Germany');
         $event2->setTime(new \DateTime('tomorrow noon'));
         $event2->setDetails('This will be awesome - I will record second episode for free and then will start selling them');
         $manager->persist($event2);
