@@ -1,0 +1,41 @@
+{% extends '::base.html.twig' %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('bundles/user/css/login.css') }}"
+{% endblock stylesheets %}
+
+
+{% block body %}
+    <section class="main_block">
+        <article>
+            <section>
+                <h1>Registration</h1>
+
+                <form action="{{ path('user_register') }}" method="POST">
+
+                    {{ form_errors(form) }}
+
+                    <div class="awsome_username_field">
+                        {{ form_errors(form.username) }}
+                        {{ form_label(form.username) }}
+                        {{ form_widget(form.username) }}
+                    </div>
+
+                    {{ form_row(form.email) }}
+                    {{ form_row(form.plainPassword.first, {
+                        'label': 'Password'
+                    }) }}
+                    {{ form_row(form.plainPassword.second, {
+                        'label': 'Password Again'
+                    }) }}
+
+                    {{ form_rest(form) }}
+
+                    <input type="submit" value="Register" />
+                </form>
+
+            </section>
+        </article>
+    </section>
+{% endblock %}

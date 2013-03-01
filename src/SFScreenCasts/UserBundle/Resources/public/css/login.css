@@ -1,9 +1,9 @@
-.login {
+.login, .main_block {
     width: 500px;
     margin: 100px auto;
 }
 
-.login article {
+.login article, .main_block article {
     padding: 50px;
     background: #fff;
     -webkit-border-radius:5px;
@@ -11,7 +11,7 @@
     border-radius:5px;
 }
 
-.login article label {
+.login article label, .main_block article label {
     display: -moz-inline-box;
     display: inline-block;
     width: 120px;

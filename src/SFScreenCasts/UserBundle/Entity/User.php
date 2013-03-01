@@ -5,6 +5,7 @@ namespace SFScreenCasts\UserBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Security\Core\User\AdvancedUserInterface;
 use \Serializable;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * User
@@ -27,6 +28,8 @@ class User implements AdvancedUserInterface, Serializable
      * @var string
      *
      * @ORM\Column(name="username", type="string", length=255)
+     * @Assert\NotBlank(message="Put in a username of course!")
+     * @Assert\Length(min=2, minMessage="[0, +Inf] This username is kind of short, don't you think?")
      */
     private $username;
 
@@ -61,9 +64,19 @@ class User implements AdvancedUserInterface, Serializable
      * @var string
      *
      * @ORM\Column(type="string", length=255)
+     * @Assert\NotBlank
+     * @Assert\Email
      */
     private $email;
 
+    /**
+     * @Assert\NotBlank
+     * @Assert\RegExp(
+     *      pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$",
+     *      message="Please use at least 8 characters, lower case, upper case, numbers or special chars in your password"
+     * )
+     */
+    private $plainPassword;
 
     public function __construct()
     {
@@ -165,7 +178,7 @@ class User implements AdvancedUserInterface, Serializable
 
     public function eraseCredentials()
     {
-
+        $this->setPlainPassword(null);
     }
 
     public function setRoles($roles)
@@ -292,5 +305,15 @@ class User implements AdvancedUserInterface, Serializable
     public function setEmail($email)
     {
         $this->email = $email;
+    }
+
+    public function getPlainPassword()
+    {
+        return $this->plainPassword;
+    }
+
+    public function setPlainPassword($plainPassword)
+    {
+        $this->plainPassword = $plainPassword;
     }
 }
