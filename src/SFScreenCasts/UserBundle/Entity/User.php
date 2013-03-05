@@ -6,12 +6,15 @@ use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Security\Core\User\AdvancedUserInterface;
 use \Serializable;
 use Symfony\Component\Validator\Constraints as Assert;
+use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 
 /**
  * User
  *
  * @ORM\Table(name="null_user")
  * @ORM\Entity(repositoryClass="SFScreenCasts\UserBundle\Entity\UserRepository")
+ * @UniqueEntity(fields="username", message="That username is already taken!")
+ * @UniqueEntity(fields="email", message="Another user has registered using this email address!")
  */
 class User implements AdvancedUserInterface, Serializable
 {
@@ -21,6 +24,7 @@ class User implements AdvancedUserInterface, Serializable
      * @ORM\Column(name="id", type="integer")
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="AUTO")
+     *
      */
     private $id;
 
@@ -71,9 +75,9 @@ class User implements AdvancedUserInterface, Serializable
 
     /**
      * @Assert\NotBlank
-     * @Assert\RegExp(
-     *      pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$",
-     *      message="Please use at least 8 characters, lower case, upper case, numbers or special chars in your password"
+     * @Assert\Regex(
+     *          pattern="/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$/",
+     *          message="Please use at least one upper case letter, one lower case letter, and one digit in your password"
      * )
      */
     private $plainPassword;

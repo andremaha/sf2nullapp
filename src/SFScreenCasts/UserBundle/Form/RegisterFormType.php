@@ -14,7 +14,8 @@ class RegisterFormType extends AbstractType
         $builder->add('username', 'text')
             ->add('email', 'email')
             ->add('plainPassword', 'repeated', array(
-            'type' => 'password'
+            'type' => 'password',
+            'attr' => array('class' => 'foobar', 'data-useless-attr' => 'useless')
         ));;
     }
 
