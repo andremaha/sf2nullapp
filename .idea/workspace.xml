@@ -20,10 +20,19 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="RegisterController.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="RegisterController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SFScreenCasts/UserBundle/Controller/RegisterController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="52" selection-start="1787" selection-end="1787" vertical-scroll-proportion="0.50606394">
+            <state line="61" column="52" selection-start="1787" selection-end="1787" vertical-scroll-proportion="-18.36">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RegisterControllerTest.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/SFScreenCasts/UserBundle/Tests/RegisterControllerTest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="71" selection-start="455" selection-end="455" vertical-scroll-proportion="0.2590959">
               <folding />
             </state>
           </provider>
@@ -85,19 +94,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.html.twig" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/SFScreenCasts/UserBundle/Resources/views/Login/login.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="33" selection-end="179" vertical-scroll-proportion="-1.28">
-              <folding>
-                <marker date="1361892970000" expanded="true" signature="223:819" placeholder="..." />
-                <marker date="1361892970000" expanded="true" signature="241:804" placeholder="..." />
-                <marker date="1361892970000" expanded="true" signature="428:785" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="routing.yml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
           <provider selected="true" editor-type-id="text-editor">
@@ -126,7 +122,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/SFScreenCasts/UserBundle/Resources/translations/messages.en.yml" />
         <option value="$PROJECT_DIR$/app/config/config.yml" />
         <option value="$PROJECT_DIR$/src/SFScreenCasts/NullappBundle/Resources/views/Event/index.html.twig" />
         <option value="$PROJECT_DIR$/src/SFScreenCasts/NullappBundle/Resources/views/layout.html.twig" />
@@ -142,6 +137,7 @@
         <option value="$PROJECT_DIR$/src/SFScreenCasts/UserBundle/Entity/User.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
         <option value="$PROJECT_DIR$/src/SFScreenCasts/UserBundle/Controller/RegisterController.php" />
+        <option value="$PROJECT_DIR$/src/SFScreenCasts/UserBundle/Tests/RegisterControllerTest.php" />
       </list>
     </option>
   </component>
@@ -350,6 +346,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Tests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nullapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nullapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SFScreenCasts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UserBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Form" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -395,6 +417,40 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="SFScreenCasts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NullappBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nullapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nullapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SFScreenCasts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NullappBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -543,11 +599,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/SFScreenCasts/UserBundle/Tests" />
       <recent name="$PROJECT_DIR$/src/SFScreenCasts/UserBundle" />
       <recent name="$PROJECT_DIR$/src/SFScreenCasts/UserBundle/Resources/public/css" />
       <recent name="$PROJECT_DIR$/src/SFScreenCasts/NullappBundle/Resources/public" />
       <recent name="$PROJECT_DIR$/src/SFScreenCasts/NullappBundle/Resources/views/Event" />
-      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/SFScreenCasts/UserBundle/Controller" />
@@ -671,13 +727,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/SFScreenCasts/NullappBundle/Controller/EventController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="0" selection-start="724" selection-end="724" vertical-scroll-proportion="-0.64">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/Security/Core/User/AdvancedUserInterface.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="37" column="10" selection-start="1348" selection-end="1348" vertical-scroll-proportion="0.0">
@@ -784,7 +833,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SFScreenCasts/UserBundle/Controller/RegisterController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="52" selection-start="1787" selection-end="1787" vertical-scroll-proportion="0.50606394">
+        <state line="61" column="52" selection-start="1787" selection-end="1787" vertical-scroll-proportion="-18.36">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SFScreenCasts/UserBundle/Tests/RegisterControllerTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="71" selection-start="455" selection-end="455" vertical-scroll-proportion="0.2590959">
           <folding />
         </state>
       </provider>
